@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/***************************************默认样式*****************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, sub, sup, tt, var,
+a, img, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, s, samp, center,
+small, strike, strong, b, u, i, dl, ol, ul, fieldset, form, label, table {
+	margin:0;
+	padding:0;
+	border-width:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;	
+}
+
+body{font-size:14px; background:#ffffff;font-family:"Microsoft Yahei","微软雅黑"}
+
+font{margin:0;padding:0;border-width:0;outline:0;vertical-align:baseline;}
+
+ol, ul{list-style-type:none;}
+
+blockquote, q{padding:0;border-width:0;outline:0;vertical-align:baseline;background:transparent;quotes:none;}
+
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+
+table{
+/*    border-collapse:collapse;*/
+    border-spacing:0;}
+
+tbody{vertical-align:baseline;}
+
+:focus{outline:0;}
+
+a{ cursor:pointer; text-decoration:none;}
+
+/****************************** datatable fixed *********************************/
+body table.dataTable thead th,
+body table.dataTable thead td {
+    padding: 0;
+    line-height: 30px;
+}
+body table.dataTable tbody th,
+body table.dataTable tbody td {
+    padding: 7px 2px;
+}
+div.dataTables_wrapper .dataTables_paginate {
+    float:none;
+/*    background-color: #2d94d8; */
+}
+/****************************** public *********************************/
+.clear{
+	clear:both;
+    zoom:1;
+}
+.clearfix:after{
+   content: "";  
+   display: block;  
+   height: 0;  
+   clear: both;  
+   visibility: hidden;   
+} 
+.clearfix {
+   /* 触发 hasLayout */  
+   zoom: 1;  
+}
+
+/*去掉IE input的 X 统一样式*/
+::-ms-clear, ::-ms-reveal{
+    display: none;
+}
+.line {
+    border: 1px solid #9c9c9c;
+    margin: 0 15px;
+}
+
+.logo {
+    height: 65px;
+    background: url(../images/header.png) no-repeat left center;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+    line-height: 60px;
+    height: 100%;
+}
+
+.login>a,
+.notebook {
+    color: #9c9c9c;
+    cursor: pointer;
+}
+
+.notebook:hover {
+    color: rgb(36, 71, 135)
+}
